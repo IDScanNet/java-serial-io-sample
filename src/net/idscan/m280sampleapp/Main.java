@@ -11,7 +11,8 @@ public class Main {
 		 
 		 SerialPort comPort = SerialPort.getCommPorts()[0];
 		 comPort.openPort();
-		 
+		 System.out.println((comPort.getSystemPortName()));
+
 		 try {
 		    while (true)
 		    {
